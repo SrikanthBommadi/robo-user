@@ -6,7 +6,7 @@ def configMap = [
 ]
 
 if ( ! env.BRANCH_NAME.equalsIgnoreCase('main')){
-    javaMavenEKSPipeline(configMap)
+    nodeJSEKSPipeline(configMap)
 }
 else{
     echo "Please follow production process"
